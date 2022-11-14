@@ -8,13 +8,7 @@ public class fram extends VARs {
     time Time = new time();
     day Day = new day();
     year Year = new year();
-    String timeText;
-    String title = "CALENDER";
-    int width = 400;
-    int height = 400;
-    boolean resizable = false;
-    int xlocation  = 600;
-    int ylocation = 200;
+    
 
     fram()
     {
@@ -61,9 +55,7 @@ public class fram extends VARs {
         
         while(true){
             try {
-                timeLabel.setText(Time.setTime());
-                dayJLabel.setText(Day.setDay());
-                datLabel.setText(Year.setDate());
+                setLabelsTexts();
                 Thread.sleep(100);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
@@ -80,4 +72,9 @@ public class fram extends VARs {
         label.setOpaque(true);
     }
 
+    public void setLabelsTexts(){
+        timeLabel.setText(Time.setTime());
+        dayJLabel.setText(Day.setDay());
+        datLabel.setText(Year.setDate());
+    }
 }

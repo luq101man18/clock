@@ -14,4 +14,12 @@ public class VARs extends JFrame{
     JLabel timeLabel;
     JLabel dayJLabel;
     JLabel datLabel;
+
+
+    String title = "CALENDER";
+    int width = 400;
+    int height = 400;
+    boolean resizable = false;
+    int xlocation  = 600;
+    int ylocation = 200;
 }
